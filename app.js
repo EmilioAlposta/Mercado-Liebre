@@ -17,6 +17,6 @@ app.get('/Login', (req,res) =>{
 app.use(express.static(path.resolve(__dirname, './public')));
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("Corriendo servidor en el puerto 3000");
 });
